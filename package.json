@@ -1,0 +1,43 @@
+{
+  "name": "todo-electron-app-",
+  "version": "1.0.0",
+  "description": "A modern To-Do desktop app built with Electron.",
+  "main": "main.js",
+  "author": "Udit",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.todo.electron",
+    "productName": "Udit ToDo",
+    "files": [
+      "main.js",
+      "preload.js",
+      "src/**/*",
+      "icon.png"
+    ],
+    "directories": {
+      "buildResources": "build"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "icon.png"
+    }
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^24.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UditAwasthi/todo-electron-app-.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/UditAwasthi/todo-electron-app-/issues"
+  },
+  "homepage": "https://github.com/UditAwasthi/todo-electron-app-#readme"
+}
